@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            num = 0;
+            setInterval(function(){
+                num = num + 1;
+                if(num == 5){ num = 0 }
+                $("#test>img").attr({"src":"b612_prince_"+num+".png"})
+            },180)
+        })
+    </script>
+    <style>
+        * { margin: 0; padding: 0; list-style: none; }
+        a { text-decoration: none; color: inherit; }
+
+        #test>img { width: 50%; }
+    </style>
+    <style>
+        @media all and (min-width: 320px){
+            body { background-color: #fff; }
+
+        }
+        @media all and (min-width: 768px){
+            body { background-color: #fff; }
+
+        }
+        @media all and (min-width: 1024px){
+            body { background-color: #fff; }
+
+        }
+        @media all and (min-width: 1600px){
+            body { background-color: #fff; }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        <img src="b612_prince_0.png" alt="">
+    </div>
+</body>
+</html>
